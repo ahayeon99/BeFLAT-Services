@@ -4,7 +4,6 @@
 		<title>BeFLAT SERVICES | Carbon Offset Project Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- HTML5 UP Solid State 테마 핵심 디자인 내장 -->
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Raleway:wght@200;400;600;800&display=swap');
 			
@@ -20,6 +19,11 @@
 			/* Banner */
 			#banner { position: relative; padding: 12em 0 10em 0; background-color: #2e3141; background-image: linear-gradient(to top, rgba(46,49,65,0.8), rgba(46,49,65,0.8)), url('bg.jpg'); background-size: cover; background-position: center; text-align: center; }
 			#banner .inner { max-width: 65em; margin: 0 auto; padding: 0 2em; }
+			
+			/* 로고 원형 박스 스타일 */
+			#banner .logo-box { width: 90px; height: 90px; border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5em auto; background: rgba(255, 255, 255, 0.05); }
+			#banner .logo-box img { max-width: 60px; height: auto; display: block; }
+
 			#banner h2 { font-family: 'Raleway', sans-serif; font-size: 3em; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5em; border-bottom: solid 2px #4facfe; display: inline-block; padding-bottom: 0.2em; }
 			#banner p { font-size: 1.2em; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1em; font-weight: 400; color: #d0d2db; }
 			#banner p.sub { font-size: 1.05em; text-transform: none; font-weight: 300; max-width: 45em; margin: 1.5em auto 0 auto; line-height: 1.8; opacity: 0.9; }
@@ -74,6 +78,10 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
+							<!-- 상단 원형 아이콘 자리에 로고 이미지 삽입 -->
+							<div class="logo-box">
+								<img src="logo.png" alt="BeFLAT Logo" />
+							</div>
 							<h2>BeFLAT SERVICES</h2>
 							<p>Connecting Good Projects to Good Investors</p>
 							<p class="sub">

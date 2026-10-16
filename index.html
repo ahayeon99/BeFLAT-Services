@@ -4,47 +4,79 @@
 		<title>BeFLAT SERVICES | Carbon Offset Project Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- CSS 경로: 최상단에 있는 main.css를 직접 바라보게 수정 -->
-		<link rel="stylesheet" href="main.css" />
-		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+		<!-- HTML5 UP Solid State 테마 핵심 디자인 내장 -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Raleway:wght@200;400;600;800&display=swap');
+			
+			* { box-sizing: border-box; margin: 0; padding: 0; }
+			body { background-color: #2e3141; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 15pt; font-weight: 300; line-height: 1.65; overflow-x: hidden; }
+			a { color: #ffffff; text-decoration: underline; transition: color 0.2s ease; }
+			a:hover { color: #4facfe; }
+			
+			/* Header */
+			#header { position: absolute; top: 0; left: 0; width: 100%; z-index: 10000; padding: 2em 3em; display: flex; justify-content: space-between; align-items: center; }
+			#header h1 a { font-family: 'Raleway', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; text-decoration: none; color: #ffffff; font-size: 0.9em; }
+			
+			/* Banner */
+			#banner { position: relative; padding: 12em 0 10em 0; background-color: #2e3141; background-image: linear-gradient(to top, rgba(46,49,65,0.8), rgba(46,49,65,0.8)), url('bg.jpg'); background-size: cover; background-position: center; text-align: center; }
+			#banner .inner { max-width: 65em; margin: 0 auto; padding: 0 2em; }
+			#banner h2 { font-family: 'Raleway', sans-serif; font-size: 3em; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5em; border-bottom: solid 2px #4facfe; display: inline-block; padding-bottom: 0.2em; }
+			#banner p { font-size: 1.2em; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1em; font-weight: 400; color: #d0d2db; }
+			#banner p.sub { font-size: 1.05em; text-transform: none; font-weight: 300; max-width: 45em; margin: 1.5em auto 0 auto; line-height: 1.8; opacity: 0.9; }
+
+			/* Wrapper / Sections */
+			#wrapper { background: #2e3141; }
+			.spotlight { display: flex; align-items: center; padding: 6em 0; border-bottom: solid 1px rgba(255,255,255,0.05); }
+			.spotlight .inner { max-width: 75em; margin: 0 auto; padding: 0 2em; display: flex; align-items: center; gap: 4em; }
+			.spotlight.alt .inner { flex-direction: row-reverse; }
+			.spotlight .image { width: 40%; flex-shrink: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+			.spotlight .image img { width: 100%; height: auto; display: block; }
+			.spotlight .content { width: 60%; }
+			.spotlight h2 { font-family: 'Raleway', sans-serif; font-size: 1.8em; font-weight: 700; margin-bottom: 0.8em; color: #ffffff; }
+			.spotlight p { font-size: 1.05em; line-height: 1.8; color: #c0c3d0; }
+
+			/* Section Styles */
+			.style1 { background-color: #353849; }
+			.style2 { background-color: #2e3141; }
+			.style3 { background-color: #282b3a; }
+
+			/* Footer */
+			#footer { background-color: #212431; padding: 6em 0 4em 0; text-align: center; }
+			#footer .inner { max-width: 50em; margin: 0 auto; padding: 0 2em; }
+			#footer h2 { font-family: 'Raleway', sans-serif; font-size: 2em; font-weight: 700; margin-bottom: 0.5em; }
+			#footer p { margin-bottom: 2em; color: #a0a3b0; }
+			#footer ul.contact { list-style: none; padding: 0; margin-bottom: 3em; }
+			#footer ul.contact li { margin-bottom: 1em; font-size: 1.1em; }
+			#footer ul.copyright { list-style: none; padding: 0; opacity: 0.5; font-size: 0.8em; display: flex; justify-content: center; gap: 1.5em; }
+
+			/* Responsive */
+			@media screen and (max-width: 980px) {
+				.spotlight .inner, .spotlight.alt .inner { flex-direction: column !important; text-align: center; }
+				.spotlight .image, .spotlight .content { width: 100%; }
+				#banner h2 { font-size: 2.2em; }
+			}
+		</style>
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">
-							<!-- 로고 경로: 최상단 목록에 logo.png가 있으므로 바로 호출 -->
-							<img src="logo.png" alt="BeFLAT SERVICES" style="height: 35px; vertical-align: middle;" />
-						</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+					<header id="header">
+						<h1>
+							<a href="index.html">
+								<img src="logo.png" alt="BeFLAT SERVICES" style="height: 38px; vertical-align: middle;" />
+							</a>
+						</h1>
 					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#banner">About</a></li>
-								<li><a href="#vision">Vision & Services</a></li>
-								<li><a href="#contact">Contact Us</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
 							<h2>BeFLAT SERVICES</h2>
 							<p>Connecting Good Projects to Good Investors</p>
-							<p style="font-size: 1.1em; margin-top: 1em; opacity: 0.9;">
+							<p class="sub">
 								Support for carbon emission trading brokerage and development of greenhouse gas reduction projects — building international-standard projects and activating carbon credit trading through global networks.
 							</p>
 						</div>
@@ -53,38 +85,44 @@
 				<!-- Wrapper -->
 					<section id="wrapper">
 
-						<!-- One -->
-							<section id="vision" class="wrapper spotlight style1">
+						<!-- Section One -->
+							<section class="spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="pic01.jpg" alt="" /></a>
+									<div class="image"><img src="pic01.jpg" alt="Carbon Projects" /></div>
 									<div class="content">
-										<h2 class="major">Connecting Good Projects to Good Investors</h2>
-										<p>• Identify and support high-quality GHG reduction projects<br>
-										• Promote sustainable growth and carbon neutrality of companies</p>
+										<h2>Connecting Good Projects to Good Investors</h2>
+										<p>
+											• Identify and support high-quality GHG reduction projects<br>
+											• Promote sustainable growth and carbon neutrality of companies
+										</p>
 									</div>
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
+						<!-- Section Two -->
+							<section class="spotlight style2 alt">
 								<div class="inner">
-									<a href="#" class="image"><img src="pic02.jpg" alt="" /></a>
+									<div class="image"><img src="pic02.jpg" alt="Global Market" /></div>
 									<div class="content">
-										<h2 class="major">Enhance Competitiveness in the Global Market</h2>
-										<p>• Develop mitigation projects that comply with international standards<br>
-										• Facilitate carbon credit trading through our international network</p>
+										<h2>Enhance Competitiveness in Global Market</h2>
+										<p>
+											• Develop mitigation projects that comply with international standards<br>
+											• Facilitate carbon credit trading through our international network
+										</p>
 									</div>
 								</div>
 							</section>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
+						<!-- Section Three -->
+							<section class="spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="pic03.jpg" alt="" /></a>
+									<div class="image"><img src="pic03.jpg" alt="Global Partnerships" /></div>
 									<div class="content">
-										<h2 class="major">Reliable Services through Global Partnerships</h2>
-										<p>• Provide reliable services through collaboration with various global organizations<br>
-										• Introduce innovative solutions to reduce carbon emissions</p>
+										<h2>Reliable Services through Global Partnerships</h2>
+										<p>
+											• Provide reliable services through collaboration with various global organizations<br>
+											• Introduce innovative solutions to reduce carbon emissions
+										</p>
 									</div>
 								</div>
 							</section>
@@ -94,31 +132,21 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major" id="contact">Have a project or looking to invest?</h2>
+							<h2>Have a project or looking to invest?</h2>
 							<p>Whether you own a reduction project, seek verified carbon credits, or want to partner globally, let's talk.</p>
+							
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									82 Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea
-								</li>
-								<li class="icon solid fa-envelope">
-									<a href="mailto:info@beflatservices.com">info@beflatservices.com</a>
-								</li>
+								<li>📍 82 Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea</li>
+								<li>✉️ <a href="mailto:info@beflatservices.com">info@beflatservices.com</a></li>
 							</ul>
+
 							<ul class="copyright">
-								<li>&copy; BeFLAT SERVICES. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; BeFLAT SERVICES. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="jquery.min.js"></script>
-			<script src="jquery.scrollex.min.js"></script>
-			<script src="browser.min.js"></script>
-			<script src="breakpoints.min.js"></script>
-			<script src="util.js"></script>
-			<script src="main.js"></script>
 
 	</body>
 </html>
